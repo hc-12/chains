@@ -5,7 +5,7 @@
   "date_format": "(%y-%m-%d %H:%M)",
   "mark_weekends": true,
   "remove_weekends": false,
-  "color_scheme": "Packages/DontBreakTheChain/chains.hidden-tmTheme",
+  "color_scheme": "Packages/SublimeInChains/chains.hidden-tmTheme",
   "font_size": 11,
   "font_face": "Consolas",
   "draw_indent_guides": false,
