@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>chain</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~T</string>
+	<key>name</key>
+	<string>Chains</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\s*\d\d\d\d\s*</string>
+			<key>name</key>
+			<string>year.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*.+:</string>
+			<key>name</key>
+			<string>keyword.control.header.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*\*\*\s*?.*\*\*.*$</string>
+			<key>name</key>
+			<string>goal.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\.\d\d?\s\s</string>
+			<key>name</key>
+			<string>day.weekend.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\s\d\d?[a-zA-Z]\s</string>
+			<key>name</key>
+			<string>day.done.chain</string>
+		</dict>
+
+
+		<dict>
+			<key>match</key>
+			<string>\.\d\d?[a-zA-Z]\s</string>
+			<key>name</key>
+			<string>day.done.weekend.chain</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.bullet.completed.chain</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.completed.chain</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(\+|✓|✔|☑|- ✔)\s+((?:[^\@]|(?&lt;!\s)\@|\@(?=\s))*)</string>
+			<key>name</key>
+			<string>meta.item.chain.completed</string>
+		</dict>
+
+		<dict>
+		  <key>match</key>
+		  <string>^\s*((?!-|\+|✓|✔|- ✔|❍|❑|■|□|☐|▪|▫|–|—|＿|✘|(x\s+)|- ✘)\S).*((?!:\s*).\s*)$</string>
+		  <key>name</key>
+		  <string>notes.chain</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.bullet.pending.chain</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>text.pending.chain</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(-|❍|❑|■|□|☐|▪|▫|–|—)\s+((?:[^\@]|(?&lt;!\s)\@)*)</string>
+			<key>name</key>
+			<string>meta.item.chain.pending</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)(\@[\w\d\.\-!?]+\s+)*(\@done|\@project|\(\d*.*\))[\(\)\d\w,\.:\-\/\s\@\+]*\s*\n*</string>
+			<key>name</key>
+			<string>meta.tag.chain.completed</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)(\@[\w\d\.\-!?]+\s+)*(\@cancelled|\@project|\(\d*.*\))[\(\)\d\w,\.:\-\/\s\@\+]*\s*\n*</string>
+			<key>name</key>
+			<string>meta.tag.chain.cancelled</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\@(?!today|completed|done)[\w\d\.\(\)\-!?]+\s*</string>
+			<key>name</key>
+			<string>meta.tag.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^＿+$</string>
+			<key>name</key>
+			<string>meta.punctuation.archive.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>^\s*---.{3,5}---+$</string>
+			<key>name</key>
+			<string>meta.punctuation.separator.chain</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\@today|✭ᴛᴏᴅᴀʏ</string>
+			<key>name</key>
+			<string>string.other.tag.chain.today</string>
+		</dict>
+
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.bullet.cancelled.chain</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>text.cancelled.chain</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*(✘|x|- ✘)\s+((?:[^\@]|(?&lt;!\s)\@)*)</string>
+			<key>name</key>
+			<string>meta.item.chain.cancelled</string>
+		</dict>
+
+	</array>
+	<key>scopeName</key>
+	<string>text.chain</string>
+	<key>uuid</key>
+	<string>8fj2g29c-04ef-4330-9a6b-9b99aae1c418</string>
+</dict>
+</plist>

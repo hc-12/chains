@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+d"], "command": "mark_as_done","context": [{ "key": "selector", "operator": "equal", "operand": "text.chain" }] },
+  { "keys": ["ctrl+e"], "command": "unmark_done", "context": [{"key": "selector", "operator": "equal", "operand": "text.chain" }] },
+  { "keys": ["ctrl+x"], "command": "done_toggle", "context": [{"key": "selector", "operator": "equal", "operand": "text.chain" }] },
+  { "keys": ["ctrl+shift+d"], "command": "mark_today_as_done","context": [{ "key": "selector", "operator": "equal", "operand": "text.chain" }] }
+]
