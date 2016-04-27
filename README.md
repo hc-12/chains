@@ -1,4 +1,4 @@
-# sublime-in-chains
+# Sublime in Chains
 A sublime calendar plugin to complete and mark your special goal everyday. Inspired by Jerry Seinfield's "Don't break the chain".
 
 ![](sublimeinchains.png)
