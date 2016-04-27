@@ -1,5 +1,5 @@
 # Sublime in Chains
-A Sublime Text calendar plugin to complete and mark your special goal everyday. Inspired by Jerry Seinfield's "Don't break the chain".
+A Sublime Text calendar plugin to complete and mark your special goal everyday. Inspired by Jerry Seinfeld's "Don't break the chain" productivity method.
 
 ![](sublimeinchains.png)
 
