@@ -33,8 +33,8 @@ And remember __"Don't Break The Chain!"__
   * 
   
 ## Usage
-* Create a new file - `ctrl` or `cmd` + `shift` + `p`. Select `Chains: New Document`
-* `ctrl` or `cmd` + `d` to `mark_as_done`
-* `ctrl` or `cmd` + `e` to `unmark_done`
-* `ctrl` or `cmd` + `x` to `done_toggle`
-* `ctrl` or `cmd` + `shift` + `d` to `mark_today_as_done`
+* Create a new file - `ctrl or cmd + shift + p`. Select `Chains: New Document`
+* `ctrl or cmd + d` to `mark_as_done`
+* `ctrl or cmd + e` to `unmark_done`
+* `ctrl or cmd + x` to `done_toggle`
+* `ctrl or cmd + shift + d` to `mark_today_as_done`
