@@ -1,5 +1,5 @@
 # Sublime in Chains
-A sublime calendar plugin to complete and mark your special goal everyday. Inspired by Jerry Seinfield's "Don't break the chain".
+A Sublime Text calendar plugin to complete and mark your special goal everyday. Inspired by Jerry Seinfield's "Don't break the chain".
 
 ![](sublimeinchains.png)
 
@@ -11,7 +11,7 @@ A sublime calendar plugin to complete and mark your special goal everyday. Inspi
 * Weekends are clearly marked
 * Current date is automatically highlighted in red, becomes green when toggled done
 * Quick key binding to mark `today` done
-* Forbid to toggle future dates
+* Forbid toggling on future dates
 
 And remember __"Don't Break The Chain!"__
 
