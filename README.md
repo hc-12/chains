@@ -8,6 +8,7 @@ A sublime calendar plugin to complete and mark your special goal everyday. Inspi
 
 * You can have as many calendars as you like saved in individual `.chains` file extension
 * You can highlight multiple dates and toggle them
+* Weekends are clearly marked
 * Current date is automatically highlighted in red, becomes green when toggled done
 * Quick key binding to mark `today` done
 
@@ -31,7 +32,7 @@ And remember __"Don't Break The Chain!"__
   * 
   
 ## Usage
-
+* Create a new file - `ctrl` or `cmd` + `shift` + `p`. Select `Chains: New Document`
 * `ctrl` or `cmd` + `d` to `mark_as_done`
 * `ctrl` or `cmd` + `e` to `unmark_done`
 * `ctrl` or `cmd` + `x` to `done_toggle`
