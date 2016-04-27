@@ -127,7 +127,7 @@ class HighlightTodayCommand(sublime_plugin.TextCommand):
 class HighlightTodayOnActivated(sublime_plugin.EventListener):
     def on_activated(self, view):
         # only execute when the current view has DBTC syntax
-        if view.settings().get('syntax').endswith('DontBreakTheChain.tmLanguage'):
+        if view.settings().get('syntax').endswith('SublimeInChains.tmLanguage'):
             view.run_command('highlight_today')
 
 
@@ -222,8 +222,8 @@ class DontBreakTheChainNewDocCommand(sublime_plugin.WindowCommand):
     def run(self):
         view = self.window.new_file()
         regions = view.sel()
-        view.set_syntax_file('Packages/DontBreakTheChain'
-                             '/DontBreakTheChain.tmLanguage')
+        view.set_syntax_file('Packages/SublimeInChains'
+                             '/SublimeInChains.tmLanguage')
         view.run_command("dont_break_the_chain")
         # view.run_command("highlight_today")
         msg_r = view.find(INITIAL_MESSAGE, 0, sublime.LITERAL)
