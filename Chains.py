@@ -62,7 +62,7 @@ def get_weekday_format(year, month, day, include_weekend=True):
     return " {day}  ".format(day=day)
 
 
-class DontBreakTheChainCommand(sublime_plugin.TextCommand):
+class ChainsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         self.view.insert(edit, 0, dbtc())
         self.view.run_command('highlight_today')
