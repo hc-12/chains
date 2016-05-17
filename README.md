@@ -22,7 +22,7 @@ And remember __"Don't Break The Chain!"__
 
 * Bring up the Command Palette (Command+Shift+P on OS X, Control+Shift+P on Linux/Windows).
 * Select Package Control: Install Package.
-* Select Package Sublime In Chains to install.
+* Select Package Chains to install.
 
 ### Not using Package Control:
 
