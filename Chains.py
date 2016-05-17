@@ -218,7 +218,7 @@ class DoneToggleCommand(sublime_plugin.TextCommand):
                            day["date"])
 
 
-class DontBreakTheChainNewDocCommand(sublime_plugin.WindowCommand):
+class ChainsNewDocCommand(sublime_plugin.WindowCommand):
     def run(self):
         view = self.window.new_file()
         regions = view.sel()
