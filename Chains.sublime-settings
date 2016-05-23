@@ -1,10 +1,5 @@
 {
-  "open_tasks_bullet": "☐", // options: - | ❍ | ❑ | ■ | □ | ☐ | ▪ | ▫ | – | — ≡ → ›
-  "done_tasks_bullet": "✔", // options: + | ✓ | ✔
-  "cancelled_tasks_bullet": "✘", // options: x | ✘
-  "date_format": "(%y-%m-%d %H:%M)",
-  "mark_weekends": true,
-  "remove_weekends": false,
+  "done_symbol": "X", // options: x | ✘ | ✔
   "color_scheme": "Packages/Chains/chains.hidden-tmTheme",
   "font_size": 11,
   "font_face": "Consolas",

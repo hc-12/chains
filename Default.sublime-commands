@@ -1,5 +1,5 @@
 [
-    { "caption": "Chains: New document", "command": "dont_break_the_chain_new_doc" },
+    { "caption": "Chains: New document", "command": "chains_new_doc" },
     { "caption": "Chains: Highlight Today", "command": "highlight_today" },
     { "caption": "Chains: Mark As Done", "command": "mark_as_done" },
     { "caption": "Chains: Unmark Done", "command": "unmark_done" },

@@ -8,6 +8,7 @@ NOT_FOUND = sublime.Region(-1, -1)
 DONE_SYMBOL = 'X'
 NORMAL_SYMBOL = ' '
 WEEKEND_SYMBOL = '.'
+CALENDAR_WIDTH = 158
 TODAY_KEY = 'today'
 INITIAL_MESSAGE = ("<Put your goal here that you want to achieve everyday. "
                    "Remember, DON'T BREAK THE CHAIN>")
@@ -19,11 +20,13 @@ MONTHS = {m:("{month}: "
                  for m in range(1, 13)}
 
 
-def dbtc():
+def dbtc(self):
     """output the calendar of current year in text with month
     follow by days on each row"""
     current_yr = datetime.date.today().year
-    CALENDAR_WIDTH = 158
+
+    global DONE_SYMBOL
+    DONE_SYMBOL = self.view.settings().get("done_symbol")
 
     init_msg = "** {0} **".format(INITIAL_MESSAGE).center(CALENDAR_WIDTH)
     year = "{year}\n".format(year=current_yr).rjust(8, ' ')
@@ -64,7 +67,7 @@ def get_weekday_format(year, month, day, include_weekend=True):
 
 class ChainsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        self.view.insert(edit, 0, dbtc())
+        self.view.insert(edit, 0, dbtc(self))
         self.view.run_command('highlight_today')
 
 
@@ -224,7 +227,7 @@ class ChainsNewDocCommand(sublime_plugin.WindowCommand):
         regions = view.sel()
         view.set_syntax_file('Packages/Chains'
                              '/Chains.tmLanguage')
-        view.run_command("dont_break_the_chain")
+        view.run_command("chains")
         # view.run_command("highlight_today")
         msg_r = view.find(INITIAL_MESSAGE, 0, sublime.LITERAL)
         region = region_cursor_start(msg_r)
