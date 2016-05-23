@@ -26,11 +26,10 @@ And remember __"Don't Break The Chain!"__
 
 ### Not using Package Control:
 
-* Save files to the `Packages/Package Syncing` directory, then relaunch Sublime:
+* Save files to the `Packages/Chains` directory, then relaunch Sublime:
   * Linux: `~/.config/sublime-text-2|3/Packages/Chains`
   * Mac: `~/Library/Application Support/Sublime Text 2|3/Packages/Chains`
   * Windows: `%APPDATA%/Sublime Text 2|3/Packages/Chains`
-  *
 
 ## Usage
 * Create a new file - `ctrl or cmd + shift + p`. Select `Chains: New Document`
